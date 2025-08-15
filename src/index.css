@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --font-source-sans: 'Source Sans 3', sans-serif;
+  --font-cinzel: 'Cinzel', sans-serif;
+  --color-bg-dark: #181414;
+  --color-bg-light: #f6f7fb;
+  --color-muted: #9ca3af;
+  --color-accent: #caa03a;
+}
+
+/* buttons */
+.btn {
+  @apply text-base md:text-lg px-6 py-2 rounded-lg cursor-pointer hover:opacity-70 transition-all;
+}
+.btn-ghost {
+  @apply bg-transparent text-bg-light border-muted border-1 hover:bg-bg-light hover:text-bg-dark transition-all
+}
+
+/* typography */
+.eyebrow {
+  @apply tracking-wider uppercase font-bold text-base md:text-lg font-source-sans text-accent
+}
+.lead {
+  @apply font-cinzel font-bold text-3xl md:text-4xl
+}
+
+/* stats */
+.stat {
+  @apply block font-bold text-3xl md:text-4xl text-bg-light
+}
+.label {
+  @apply block text-muted text-base md:text-lg
+}
+
+/* search listing */
+.input {
+  @apply border border-gray-300 rounded-lg py-2 px-3 text-base
+}
+.input-label {
+  @apply flex flex-col gap-1 text-sm
+}
+
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-family: 'Source Sans 3', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
