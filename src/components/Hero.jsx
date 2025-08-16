@@ -2,7 +2,7 @@ export default function Hero() {
     return (
         <section className="min-h-screen bg-black/70 flex justify-center items-center gap-4 lg:gap-8 p-8 md:p-16">
             <div className="flex flex-col gap-4 p-4 text-center">
-                <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] font-source-sans m-0">
+                <h1 className="text-white text-5xl lg:text-6xl font-bold leading-[1.1] font-source-sans m-0">
                     Pahrump's Trusted Realtor
                 </h1>
                 <p className="text-xl font-source-sans text-muted">
